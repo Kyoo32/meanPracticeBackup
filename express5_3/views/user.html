@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<% include header.html %>
+</header>
+<body>
+  <h3>User </h3>
+  <ul>
+
+    <% for(var i=0; i< users.length; i++) {%>
+   <li><%= i + ':\t' + users[i].name + '\t' +users[i].phone %></li>
+   <% } %>
+  </ul>
+</body>
+<% include footer.html %>
