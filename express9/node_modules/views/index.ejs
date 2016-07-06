@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <ul>
+      <% for(var i=0; i< rows.length; i++) {%>
+     <li><%= i + ':\t' + rows[i].moodDate + '\t' +rows[i].moodComment %></li>
+     <% } %>
+    </ul>
+  </body>
+</html>
