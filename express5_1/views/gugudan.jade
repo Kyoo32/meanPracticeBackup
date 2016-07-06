@@ -1,0 +1,15 @@
+doctype html
+html
+  body
+    time= time
+    | 단
+    - var n = 1
+    ul
+      while n < 10
+        -var result = time * n
+        li= time + ' * ' + n++ + ' = ' + result
+    style.
+      ul {
+        list-style-type: none;
+        font-weight: bold;
+      }
